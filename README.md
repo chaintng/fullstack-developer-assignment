@@ -9,7 +9,8 @@ RoomsQuickly has hundred of partners willing to participate and post bids: websi
 **Partners should be able to:**
 
 * request list of active auction items (items which are able to accept bids)
-* post a bid and get success/failure response back
+* see minimum bid (5% more than then current highest bid)
+* post a bid and get success/failure response back (can bid multiple times)
 * request information whether or not the bid is a winner by unique bid_id
 
 **Business rules:**
@@ -17,8 +18,7 @@ RoomsQuickly has hundred of partners willing to participate and post bids: websi
 * Partners bid on unique rooms
 * Rooms should be returned in list of auctionable rooms ordered by time remaining for bidding
 * Each room has minimal allowed bid
-* Bid with higher price wins
-  * If new price is greater than old one by 5%
+* Bid with higher price wins (If multiple bids have same price, the first bid win)
 * Each room is opened for bids for 10 minutes
   * If new bid is received less than 1 minute from the end of room auction then auction time is automatically extend by 1 minute (to prevent bidding in last seconds with anyone else being able to overbid)
 
@@ -37,7 +37,7 @@ Please use React.js for the page.
 
 
 ## Areas we would be evaluating
-* correct understanding of business logic
+* correctness of business logic understanding
 * Is there documentation?
 * Code style
 * language/platform features utilization
