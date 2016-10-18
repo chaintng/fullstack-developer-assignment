@@ -17,7 +17,7 @@ RoomsQuickly has hundred of partners willing to participate and post bids: websi
 * Partners bid on unique rooms
 * Rooms should be returned in list of auctionable rooms ordered by time remaining for bidding
 * Each room has minimal allowed bid
-* Bid with higher price wins 
+* Bid with higher price wins
   * If new price is greater than old one by 5%
 * Each room is opened for bids for 10 minutes
   * If new bid is received less than 1 minute from the end of room auction then auction time is automatically extend by 1 minute (to prevent bidding in last seconds with anyone else being able to overbid)
@@ -37,6 +37,7 @@ Please use React.js for the page.
 
 
 ## Areas we would be evaluating
+* correct understanding of business logic
 * Is there documentation?
 * Code style
 * language/platform features utilization
@@ -45,6 +46,3 @@ Please use React.js for the page.
 * complexity (easier to understand code is better)
 * unit/integration/end2end tests
 * resolution for all challenges
-
-
-
